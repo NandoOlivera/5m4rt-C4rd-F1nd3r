@@ -9,7 +9,7 @@
         <param name="android-package" value="nl.xservices.plugins.Insomnia" />
     </feature>
     <allow-intent href="market:*" />
-    <name>Truco</name>
+    <name>Smart Card Finder</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
