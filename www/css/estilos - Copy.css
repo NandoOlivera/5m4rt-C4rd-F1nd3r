@@ -1,0 +1,266 @@
+
+@font-face {
+    font-family: 'FuturaStdHeavy';
+    src: url('fonts/FuturaStdHeavy.eot');
+    src: url('fonts/FuturaStdHeavy.eot') format('embedded-opentype'),
+         url('fonts/FuturaStdHeavy.woff2') format('woff2'),
+         url('fonts/FuturaStdHeavy.woff') format('woff'),
+         url('fonts/FuturaStdHeavy.ttf') format('truetype'),
+         url('fonts/FuturaStdHeavy.svg#FuturaStdHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaStdLight';
+    src: url('fonts/FuturaStdLight.eot');
+    src: url('fonts/FuturaStdLight.eot') format('embedded-opentype'),
+         url('fonts/FuturaStdLight.woff2') format('woff2'),
+         url('fonts/FuturaStdLight.woff') format('woff'),
+         url('fonts/FuturaStdLight.ttf') format('truetype'),
+         url('fonts/FuturaStdLight.svg#FuturaStdLight') format('svg');
+}
+
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none; 
+	background:#000;
+	-webkit-backface-visibility: hidden;
+}
+
+
+
+#main{
+	width:640px;
+	height:960px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../img/fondo.jpg) no-repeat;
+	overflow:hidden;
+	transform-origin:left top;
+	
+}
+
+#main_logo{
+	width:456px;
+	height:279px;
+	position:absolute;
+	left:96px;
+	top:45px;
+	opacity:0;
+
+	/*width:256px;
+	height:157px;
+	left:36px;
+	top:24px;*/
+}
+
+
+#main_back_btn{
+	width:116px;
+	height:65px;
+	position:absolute;
+	right:30px;
+	top:30px;
+	border:1px solid #FFF;
+	background:url(../img/bg_negro.png);
+	box-shadow:4px 3px 15px #000;
+	font-family:'FuturaStdHeavy';
+	font-size:30px;
+	color:#CCC;
+	text-align:center;
+	line-height:65px;
+	border-radius:10px;
+}
+
+
+/******* HOME ********/
+
+#home{
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+}
+
+.home_boton{
+	width:438px;
+	height:103px;
+	position:absolute;
+	border:1px solid #FFF;
+	background:url(../img/bg_negro.png);
+	box-shadow:4px 3px 15px #000;
+	font-family:'FuturaStdHeavy';
+	font-size:50px;
+	color:#CCC;
+	text-align:center;
+	line-height:103px;
+	border-radius:19px;
+}
+
+#home_perform_btn{
+	left:104px;
+	top:375px;
+}
+
+
+#home_settings_btn{
+	left:104px;
+	top:538px;
+}
+
+#home_tutorial_btn{
+	left:104px;
+	top:697px;
+}
+
+
+/******* SETTINGS *********/
+
+#settings{
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+}
+
+#settings_placa{
+	width:500px;  /*560px;*/
+	height:490px;
+	padding-right:60px;
+	position:absolute;
+	left:40px;
+	top:275px;
+	border:1px solid #FFF;
+	background:url(../img/bg_negro.png);
+	box-shadow:4px 3px 15px #000;
+	font-family:'FuturaStdHeavy';
+	font-size:50px;
+	color:#CCC;
+	text-align:right;
+	border-radius:19px;
+}
+
+#settings_titulo{
+	text-align: center;
+	margin-top:40px;
+	margin-bottom:57px;
+
+}
+
+.settings_select{
+	width:275px;
+	height:60px;
+	border:none;
+	background: url(../img/settings/bg_select.png) no-repeat;
+	background-position:left bottom;
+	-webkit-appearance: none;
+	font-family:'FuturaStdHeavy';
+	font-size:50px;
+	color:#CCC;
+	text-indent: 40px;
+	margin-left:14px;
+	margin-bottom:40px;
+}
+
+/***** TUTORIAL *****/
+
+#tutorial{
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+}
+
+#tutorial_placa{
+	width:580px;
+	height:720px;
+	position:absolute;
+	left:30px;
+	top:210px;
+	border:1px solid #FFF;
+	background:url(../img/bg_negro.png);
+	box-shadow:4px 3px 15px #000;
+	color:#CCC;
+	border-radius:19px;
+}
+
+#tutorial_titulo{
+	font-family:'FuturaStdHeavy';
+	font-size:50px;
+	text-align:center;
+	margin-top:30px;
+}
+
+#tutorial_texto{
+	width:460px;
+	height:560px;
+	position:relative;
+	margin-left:60px;
+	margin-top:23px;
+	font-family:'FuturaStdLight';
+	font-size:40px;
+	line-height:48px;
+	overflow-y:scroll;  
+}
+
+/***** TRUCO *****/
+
+#truco{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#000;
+	display:none;
+}
+
+.truco_btn{
+	width:33.33%;
+	height:20%;
+	position:relative;
+	float:left;
+}
+
+#truco_btn_reset{
+	width:33.33%;
+	height:20%;
+	position:relative;
+	float:left;
+	margin-left: 33.33%;
+}
+
+.truco_btn_learning{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border:1px solid #666;
+}
+
+.truco_btn_learning_num{
+	width:100%;
+	position:absolute;
+	top:50%;
+	margin-top:-20px;
+	font-family:'FuturaStdHeavy';
+	font-size:45px;
+	color:#666;
+	text-align:center;
+}
+
+.truco_btn_helper{
+	width:4px;
+	height:4px;
+	position:absolute;
+	right:-2px;
+	bottom:-2px;
+	background:#003; 
+}
