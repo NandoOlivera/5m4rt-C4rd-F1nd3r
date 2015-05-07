@@ -31,7 +31,7 @@ function Truco(){
 	$(this.main).bind('TRUCO_BTN_TOUCH_START', onTrucoBtnTouchStart);
 	$(this.main).bind('touchend', onTouchEndThis);
 	$(reset_btn).bind('touchstart', onTouchStartResetBtn);
-	//$(this.main).bind('touchstart', onTouchStartThis);
+	$(this.main).bind('touchstart', onTouchStartThis);
 
 	this.animIn = function(){
 		switch(parseInt(Main.db.mode,10)){
@@ -65,6 +65,7 @@ function Truco(){
 	}
 
 	function onTouchEndThis(e){
+		e.preventDefault();
 		if(numero != 0 && !esperando){
 			xf = e.originalEvent.changedTouches[0].pageX;
 			yf = e.originalEvent.changedTouches[0].pageY;
@@ -84,7 +85,7 @@ function Truco(){
 				}
 			}
 
-			alert('numero='+numero+' - palo='+palo+' - tiempo='+Main.db.time*1000);
+			$($(this.main).find('.truco_btn_learning')[0]).html('numero='+numero+' - palo='+palo+' - tiempo='+Main.db.time*1000);
 
 			intervalo = setInterval(onIntervalo,Main.db.time*1000);
 			
@@ -98,6 +99,7 @@ function Truco(){
 
 
 	function onTouchStartResetBtn(e){
+		e.preventDefault();
 		if(!carta_visible){
 			try{
 				clearInterval(intervalo);	
@@ -112,6 +114,7 @@ function Truco(){
 	}
 
 	function onTouchStartThis(e){
+		e.preventDefault();
 		if(carta_visible){
 			if(Main.db.mode == 0){
 				Main.navegar(0);

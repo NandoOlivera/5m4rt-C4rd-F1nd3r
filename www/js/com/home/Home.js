@@ -31,14 +31,17 @@ function Home(){
 	}
 
 	function onClickPerformBtn(e){
+		e.preventDefault();
 		Main.navegar(3);
 	}
 
 	function onClickSettingsBtn(e){
+		e.preventDefault();
 		Main.navegar(1);
 	}
 
 	function onClickTutorialBtn(e){
+		e.preventDefault();
 		Main.navegar(2);
 	}
 }

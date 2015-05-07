@@ -2,6 +2,10 @@
 function Main(){
 	this.main = document.getElementById('main');
 
+	$(function() {
+	    FastClick.attach(document.body);
+	});
+
 	$(this.main).transition({scale:$(window).width()/320},0);
 	$(this.main).css('display','block');
 
@@ -53,6 +57,7 @@ function Main(){
 	}
 
 	function onClickBackBtn(e){
+		e.preventDefault();
 		Main.navegar(0);
 	}
 
