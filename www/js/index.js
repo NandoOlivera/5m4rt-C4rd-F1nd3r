@@ -28,9 +28,9 @@ var app = {
     bindEvents: function() {
         //if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
            document.addEventListener('deviceready', this.onDeviceReady, false); 
-        /*} else {
-          this.onDeviceReady(); //this is the browser
-        }*/
+        //} else {
+         // this.onDeviceReady(); //this is the browser
+        //}
 
     },
     // deviceready Event Handler

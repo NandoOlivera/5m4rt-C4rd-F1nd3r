@@ -37,13 +37,16 @@
 
         <script src="js/libs/jquery-1.8.3.min.js"></script>
         <script src="js/libs/jquery.transit.min.js"></script>
-        <script src="js/libs/indexeddbshim.min.js"></script>
+        <script src="js/libs/IndexedDBShim.min.js"></script>
         
         <script src="js/com/Main.js"></script>
+        <script src="js/com/DataBase.js"></script>
         <script src="js/com/home/Home.js"></script>
         <script src="js/com/settings/Settings.js"></script>
         <script src="js/com/tutorial/Tutorial.js"></script>
         <script src="js/com/truco/Truco.js"></script>
+        <script src="js/com/truco/TrucoBtn.js"></script>
+        <script src="js/com/truco/TrucoCarta.js"></script>
     </head>
     <body>
         
@@ -64,23 +67,26 @@
                 <div id="settings_titulo">SETTINGS</div>
                 Mode: 
                 <select class="settings_select">
-                  <option>Perform</option>
-                  <option>Learning</option>
-                  <option>Helpers</option>
+                  <option value="0">Learning</option>
+                  <option value="1">Helpers</option>
+                  <option value="2">Perform</option>
                 </select>        
 
                 Time: 
                 <select class="settings_select">
-                  <option>15 sec</option>
-                  <option>20 sec</option>
-                  <option>30 sec</option>
+                  <option value="5">5 sec</option>
+                  <option value="10">10 sec</option>
+                  <option value="15">15 sec</option>
+                  <option value="20">20 sec</option>
+                  <option value="30">30 sec</option>
+                  <option value="60">60 sec</option>
                 </select>
 
                 Sound: 
                 <select class="settings_select">
-                  <option>None</option>
-                  <option>Magic</option>
-                  <option>Space</option>
+                  <option value="0">None</option>
+                  <option value="1">Magic</option>
+                  <option value="2">Space</option>
                 </select>
 
               </div>
@@ -190,11 +196,16 @@
                 </div>
               </div>
             </div>
+
+            <div id="truco_carta">
+                <img id="truco_carta_bg" src="img/truco/bg_carta.png"/>
+                <img id="truco_carta_svg" />
+            </div>
+
         </div>
 
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-
         
         <!--script type="text/javascript" src="cordova_plugins.js"></script>
         <!--script type="text/javascript" src="IndexedDBShim.min.js"></script>
