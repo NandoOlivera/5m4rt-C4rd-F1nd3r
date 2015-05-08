@@ -7,15 +7,15 @@ function Settings(){
 
 	var select_mode = $(this.main).find('.settings_select')[0];
 	var select_time = $(this.main).find('.settings_select')[1];
-	var select_sound = $(this.main).find('.settings_select')[2];
+	var select_reveal = $(this.main).find('.settings_select')[2];
 
 	select_mode.value = Main.db.getMode();
 	select_time.value = Main.db.getTime();
-	select_sound.value = Main.db.getSound();
+	select_reveal.value = Main.db.getReveal();
 
 	$(select_mode).bind('change', onChangeSelectMode);
 	$(select_time).bind('change', onChangeSelectTime);
-	$(select_sound).bind('change', onChangeSelectSound);
+	$(select_reveal).bind('change', onChangeSelectReveal);
 
 
 	this.animIn = function(){
@@ -43,7 +43,7 @@ function Settings(){
 		Main.db.setTime(select_time.value);
 	}
 
-	function onChangeSelectSound(e){
-		Main.db.setSound(select_sound.value);
+	function onChangeSelectReveal(e){
+		Main.db.setReveal(select_reveal.value);
 	}
 }

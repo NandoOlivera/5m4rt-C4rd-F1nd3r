@@ -4,30 +4,21 @@ function DataBase(){
 	
 	var mode = null;
 	var time = null;
-	var sound = null;
+	var reveal = null;
 
 
 	cargarDB();
-
-
-	/*if(localStorage.getItem('mode') == null){
-		localStorage.setItem('mode',0);
-
-	}*//*else{
-		alert(localStorage.getItem('mode'))
-	}	*/
-
 
 	function cargarDB(){
 		if(localStorage.getItem('mode') == null){ //Si no esta creada la creo
 			localStorage.setItem('mode',0);
 			localStorage.setItem('time',5);
-			localStorage.setItem('sound',0);
+			localStorage.setItem('reveal',0);
 		}
 
 		mode = localStorage.getItem('mode');
 		time = localStorage.getItem('time');
-		sound = localStorage.getItem('sound');
+		reveal = localStorage.getItem('reveal');
 	}
 
 
@@ -41,9 +32,9 @@ function DataBase(){
 		localStorage.setItem('time',valor);
 	}
 
-	this.setSound = function(valor){
-		sound = valor;
-		localStorage.setItem('sound',valor);
+	this.setReveal = function(valor){
+		reveal = valor;
+		localStorage.setItem('reveal',valor);
 	}
 
 	this.getMode = function(){
@@ -54,8 +45,8 @@ function DataBase(){
 		return parseInt(time,10);
 	}
 
-	this.getSound = function(){
-		return parseInt(sound,10);
+	this.getReveal = function(){
+		return parseInt(reveal,10);
 	}
 
 

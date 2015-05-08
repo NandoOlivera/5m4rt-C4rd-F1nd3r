@@ -35,15 +35,9 @@ function Truco(){
 		estado = 0;
 		switch(Main.db.getMode()){
 			case 0:$('.truco_btn_learning').css('display','block');
-				   $('.truco_btn_helper').css('display','none');		
 				   break;
 			case 1:$('.truco_btn_learning').css('display','none');
-				   $('.truco_btn_helper').css('display','block');
 				   break;
-			case 2:$('.truco_btn_learning').css('display','none');
-				   $('.truco_btn_helper').css('display','none');
-				   break;	   	   
-
 		}
 
 		$(self.main).css('display','block');
@@ -59,10 +53,6 @@ function Truco(){
 			xo = e.x;
 			yo = e.y;	
 			estado = 1;
-
-			if(Main.db.getMode() == 1){
-				$('.truco_btn_helper').css('display','none');
-			}
 		}
 	}
 
@@ -109,11 +99,6 @@ function Truco(){
 			}catch(e){
 
 			}
-
-			if(Main.db.getMode() == 1){
-				$('.truco_btn_helper').css('display','none');
-			}
-		
 		}
 	}
 

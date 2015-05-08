@@ -162,12 +162,13 @@ body {
 	height:30px;
 	border:none;
 	background: url(../img/settings/bg_select.png) no-repeat;
+	background-size:137px 10px;
 	background-position:left bottom;
 	-webkit-appearance: none;
 	font-family:'FuturaStdHeavy';
 	font-size:25px;
 	color:#CCC;
-	text-indent: 20px;
+	text-indent: 10px;
 	margin-left:7px;
 	margin-bottom:20px;
 }
