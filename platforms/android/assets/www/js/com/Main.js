@@ -46,7 +46,7 @@ function Main(){
 		if(id == 0){
 			$(logo).transition({scale:1, x:0, y:0},300);
 			$(back_btn).transition({x:110, opacity:0},300);
-		}else{
+		}else if(id != 3){
 			$(logo).transition({scale:0.56, x:-64, y:-16},300);
 			$(back_btn).delay(200).transition({x:0, opacity:1},300);
 		}

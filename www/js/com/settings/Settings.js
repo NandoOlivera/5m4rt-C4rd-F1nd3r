@@ -9,9 +9,9 @@ function Settings(){
 	var select_time = $(this.main).find('.settings_select')[1];
 	var select_sound = $(this.main).find('.settings_select')[2];
 
-	select_mode.value = Main.db.mode;
-	select_time.value = Main.db.time;
-	select_sound.value = Main.db.sound;
+	select_mode.value = Main.db.getMode();
+	select_time.value = Main.db.getTime();
+	select_sound.value = Main.db.getSound();
 
 	$(select_mode).bind('change', onChangeSelectMode);
 	$(select_time).bind('change', onChangeSelectTime);

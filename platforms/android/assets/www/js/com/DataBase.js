@@ -2,9 +2,9 @@
 function DataBase(){
 	var self = this;
 	
-	this.mode = null;
-	this.time = null;
-	this.sound = null;
+	var mode = null;
+	var time = null;
+	var sound = null;
 
 
 	cargarDB();
@@ -20,30 +20,42 @@ function DataBase(){
 
 	function cargarDB(){
 		if(localStorage.getItem('mode') == null){ //Si no esta creada la creo
-			localStorage.setItem('mode',2);
+			localStorage.setItem('mode',0);
 			localStorage.setItem('time',5);
 			localStorage.setItem('sound',0);
 		}
 
-		self.mode = localStorage.getItem('mode');
-		self.time = localStorage.getItem('time');
-		self.sound = localStorage.getItem('sound');
+		mode = localStorage.getItem('mode');
+		time = localStorage.getItem('time');
+		sound = localStorage.getItem('sound');
 	}
 
 
 	this.setMode = function(valor){
-		self.mode = valor;
+		mode = valor;
 		localStorage.setItem('mode',valor);
 	}
 
 	this.setTime = function(valor){
-		self.time = valor;
+		time = valor;
 		localStorage.setItem('time',valor);
 	}
 
 	this.setSound = function(valor){
-		self.sound = valor;
+		sound = valor;
 		localStorage.setItem('sound',valor);
+	}
+
+	this.getMode = function(){
+		return parseInt(mode,10);
+	}
+
+	this.getTime = function(){
+		return parseInt(time,10);
+	}
+
+	this.getSound = function(){
+		return parseInt(sound,10);
 	}
 
 

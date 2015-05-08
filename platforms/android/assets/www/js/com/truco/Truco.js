@@ -24,22 +24,20 @@ function Truco(){
 	var palo;
 
 	var intervalo;
-	var esperando = false;
-	var carta_visible = false;
+	var estado = 0; //0 = ready, 1= touchstart, 2 = touchend y esperando, 3= carta visible
 
 
 	$(this.main).bind('TRUCO_BTN_TOUCH_START', onTrucoBtnTouchStart);
 	$(this.main).bind('touchend', onTouchEndThis);
 	$(reset_btn).bind('touchstart', onTouchStartResetBtn);
-	$(this.main).bind('touchstart', onTouchStartThis);
 
 	this.animIn = function(){
-		switch(parseInt(Main.db.mode,10)){
+		estado = 0;
+		switch(Main.db.getMode()){
 			case 0:$('.truco_btn_learning').css('display','block');
 				   $('.truco_btn_helper').css('display','none');		
 				   break;
-			case 1:console.log("va a modificar 1");
-				   $('.truco_btn_learning').css('display','none');
+			case 1:$('.truco_btn_learning').css('display','none');
 				   $('.truco_btn_helper').css('display','block');
 				   break;
 			case 2:$('.truco_btn_learning').css('display','none');
@@ -56,17 +54,22 @@ function Truco(){
 	}
 
 	function onTrucoBtnTouchStart(e){
-		if(numero == 0 && !esperando){
+		if(estado == 0){
 			numero = e.numero;
 			xo = e.x;
 			yo = e.y;	
+			estado = 1;
 
+			if(Main.db.getMode() == 1){
+				$('.truco_btn_helper').css('display','none');
+			}
 		}
 	}
 
 	function onTouchEndThis(e){
 		e.preventDefault();
-		if(numero != 0 && !esperando){
+		if(estado == 1){
+			estado = 2;
 			xf = e.originalEvent.changedTouches[0].pageX;
 			yf = e.originalEvent.changedTouches[0].pageY;
 
@@ -85,14 +88,13 @@ function Truco(){
 				}
 			}
 
-			$($(this.main).find('.truco_btn_learning')[0]).html('numero='+numero+' - palo='+palo+' - tiempo='+Main.db.time*1000);
-
-			intervalo = setInterval(onIntervalo,Main.db.time*1000);
+			intervalo = setInterval(onIntervalo,Main.db.getTime()*1000);
 			
 		}
 	}
 
 	function onIntervalo(){
+		estado = 3;
 		clearInterval(intervalo);
 		carta.mostrar(numero, palo);
 	}
@@ -100,27 +102,20 @@ function Truco(){
 
 	function onTouchStartResetBtn(e){
 		e.preventDefault();
-		if(!carta_visible){
+		if(estado != 3){
+			estado = 0;
 			try{
 				clearInterval(intervalo);	
 			}catch(e){
 
 			}
-			
-			esperando = false;
-			numero = 0;
 
+			if(Main.db.getMode() == 1){
+				$('.truco_btn_helper').css('display','none');
+			}
+		
 		}
 	}
 
-	function onTouchStartThis(e){
-		e.preventDefault();
-		if(carta_visible){
-			if(Main.db.mode == 0){
-				Main.navegar(0);
-			}else{
-				navigator.app.exitApp();
-			}		
-		}
-	}
+	
 }

@@ -40,8 +40,8 @@ body {
 	position:absolute;
 	left:0px;
 	top:0px;
-	background:url(../img/fondo.jpg) no-repeat;
-	background-size:320px auto;
+	background:url(../img/fondo.jpg) no-repeat #000;
+	background-size:319px auto;
 	overflow:hidden;
 	transform-origin:left top;
 	-webkit-transform-origin:left top;
@@ -88,6 +88,7 @@ body {
 	left:0px;
 	top:0px;
 	display:none;
+	z-index:1;
 }
 
 .home_boton{
@@ -129,6 +130,7 @@ body {
 	left:0px;
 	top:0px;
 	display:none;
+	z-index:2;
 }
 
 #settings_placa{
@@ -177,6 +179,7 @@ body {
 	left:0px;
 	top:0px;
 	display:none;
+	z-index:3;
 }
 
 #tutorial_placa{
@@ -221,6 +224,7 @@ body {
 	top:0px;
 	background:#000;
 	display:none;
+	z-index:4;
 }
 
 .truco_btn{
@@ -269,28 +273,29 @@ body {
 
 
 #truco_carta{
-	width:320px;
-	height:446px;
+	width:318px;
+	height:443px;
 	position:absolute;
 	left:50%;
-	margin-left:-160px;
+	margin-left:-159px;
 	top:50%;
-	margin-top:-223px;
+	margin-top:-221px;
 	display:none;
 	opacity:0;
+	z-index:5;
 }
 
 
 #truco_carta_bg{
-	width:320px;
-	height:446px;
+	width:318px;
+	height:443px;
 	position:absolute;
 	left:0px;
 	top:0px;
 }
 
 #truco_carta_svg{
-	width:320px;
+	width:318px;
 	height:auto;
 	position:absolute;
 	left:0px;
