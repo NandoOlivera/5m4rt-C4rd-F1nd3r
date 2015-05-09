@@ -17,10 +17,10 @@ function TrucoCarta(){
 			case 0://Instantly
 				   $(self.main).css('opacity',1);
 				   break;
-			case 1://Slowly
+			case 1://Slow
 				   $(self.main).transition({'opacity':1},3000,'linear');
 				   break;
-			case 2:// Growing
+			case 2:// Grow
 				   //PRE	
 				   $(self.main).transition({scale:0},0);
 				   $(self.main).transition({scale:1,opacity:1},300);	   	   

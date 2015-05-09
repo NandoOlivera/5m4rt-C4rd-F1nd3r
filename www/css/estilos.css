@@ -27,8 +27,8 @@
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none; 
-	background:#000;
+    -webkit-user-select: none;
+   	background:#000;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -76,8 +76,8 @@ body {
 	font-size:15px;
 	color:#CCC;
 	text-align:center;
-	line-height:32px;
-	border-radius:10px;
+	line-height:34px;
+	border-radius:5px;
 }
 
 
@@ -134,9 +134,10 @@ body {
 }
 
 #settings_placa{
-	width:250px;  /*560px;*/
+	width:230px;  /*560px;*/
 	height:245px;
-	padding-right:30px;
+	padding-left:25px;
+	padding-right:25px;
 	position:absolute;
 	left:20px;
 	top:137px;
@@ -164,14 +165,17 @@ body {
 	background: url(../img/settings/bg_select.png) no-repeat;
 	background-size:137px 10px;
 	background-position:left bottom;
-	-webkit-appearance: none;
 	font-family:'FuturaStdHeavy';
 	font-size:25px;
 	color:#CCC;
 	text-indent: 10px;
 	margin-left:7px;
 	margin-bottom:20px;
+	-webkit-appearance: none;
+  	-webkit-border-radius: 0px;
 }
+
+
 
 /***** TUTORIAL *****/
 
@@ -235,21 +239,26 @@ body {
 	float:left;
 }
 
-#truco_btn_reset{
-	width:33.33%;
-	height:20%;
-	position:relative;
-	float:left;
-	margin-left: 33.33%;
-}
-
 .truco_btn_learning{
 	width:100%;
 	height:100%;
 	position:absolute;
 	left:0px;
 	top:0px;
-	border:1px solid #666;
+	border-right:2px solid #666;
+	border-bottom:2px solid #666;
+}
+
+.truco_btn_learning_left{
+	border-left:2px solid #666;
+}
+
+.truco_btn_learning_top{
+	border-top:2px solid #666;
+}
+
+.truco_btn_learning_right{
+	border-bottom:none;
 }
 
 .truco_btn_learning_num{
@@ -281,19 +290,14 @@ body {
 	margin-left:-159px;
 	top:50%;
 	margin-top:-221px;
+	background:url(../img/truco/bg_carta.png);
+	background-size:20px 21px;
+	border-radius:15px;
 	display:none;
 	opacity:0;
 	z-index:5;
 }
 
-
-#truco_carta_bg{
-	width:318px;
-	height:443px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
 
 #truco_carta_svg{
 	width:318px;

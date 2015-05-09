@@ -10,7 +10,7 @@ function Truco(){
 
 	var carta = new TrucoCarta();
 
-	var reset_btn = document.getElementById('truco_btn_reset');
+	var reset_btn = $(this.main).find('.truco_btn')[14];
 
 
 	var numero = 0;
