@@ -5,7 +5,7 @@ function Main(){
 	$(this.main).transition({scale:$(window).width()/320},0);
 	$(this.main).css('display','block');
 
-	window.plugins.insomnia.keepAwake();
+	//window.plugins.insomnia.keepAwake();
 
 	Main.touchstart = 'touchstart';
 
