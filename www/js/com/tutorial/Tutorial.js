@@ -7,7 +7,7 @@ function Tutorial(){
 
 	this.animIn = function(){
 		//PRE
-		$(placa).transition({opacity:1,x:645},0);
+		$(placa).transition({opacity:1,x:322},0);
 
 		$(self.main).css('display','block');
 

@@ -20,8 +20,8 @@ function Home(){
 		$(self.main).css({'display':'block','opacity':1});
 
 		$(perform_btn).transition({y:0,opacity:1},300);	
-		$(settings_btn).delay(100).transition({y:0,opacity:1},300);	
-		$(tutorial_btn).delay(300).transition({y:0,opacity:1},300);
+		$(settings_btn).delay(300).transition({y:0,opacity:1},300);	
+		$(tutorial_btn).delay(600).transition({y:0,opacity:1},300);
 	}
 
 	this.animOut = function(){
