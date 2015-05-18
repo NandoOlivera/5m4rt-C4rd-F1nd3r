@@ -189,7 +189,7 @@ body {
 
 #tutorial_placa{
 	width:290px;
-	height:360px;
+	height:380px;
 	position:absolute;
 	left:15px;
 	top:105px;
@@ -209,7 +209,7 @@ body {
 
 #tutorial_texto{
 	width:230px;
-	height:280px;
+	height:300px;
 	position:relative;
 	margin-left:30px;
 	margin-top:12px;
@@ -222,6 +222,18 @@ body {
 
 .tutorial_texto_titulo{
 	font-family:'FuturaStdHeavy';
+}
+
+#tutorial_grilla{
+	width:200px;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+#tutorial_swipes{
+	width:220px;
+	margin-top:10px;
+	margin-bottom:5px;
 }
 
 /***** TRUCO *****/
@@ -310,4 +322,58 @@ body {
 	position:absolute;
 	left:0px;
 	top:0px;
+}
+
+#alerta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../img/alerta/fondo.png);
+	z-index:6;
+	display:none;
+	opacity:0;
+}
+
+#alerta_placa{
+	width: 259px;
+	padding: 16px;
+	position:absolute;
+	left: 16px;
+	top: 180px;
+	border:1px solid #FFF;
+	background:#000;
+	box-shadow:4px 3px 15px #000;
+	font-family:'FuturaStdLight';
+	font-size: 21px;
+	color:#DDD;
+	text-align:right;
+	border-radius:10px;
+	text-align:center;
+	line-height: 24px;
+}
+
+#alerta_placa_titulo{
+	font-family:'FuturaStdHeavy';
+	font-size: 23px;
+	margin-bottom:10px;
+	line-height:32px;
+}
+
+#alerta_boton{
+	width: 145px;
+	height: 41px;
+	position:relative;
+	border:1px solid #FFF;
+	background:url(../img/bg_negro.png);
+	box-shadow:4px 3px 15px #000;
+	font-family:'FuturaStdHeavy';
+	font-size: 23px;
+	color:#DDD;
+	text-align:center;
+	line-height: 41px;
+	border-radius: 8px;
+	margin-left: 54px;
+	margin-top: 20px;
 }

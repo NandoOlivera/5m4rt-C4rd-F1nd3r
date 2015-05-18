@@ -7,9 +7,8 @@ function Main(){
 
 	window.plugins.insomnia.keepAwake();
 
-	Main.touchstart = 'touchstart';
-
-
+	Main.alerta = new Alerta();
+	
 	Main.db = new DataBase();
 
 	var logo = document.getElementById('main_logo');
@@ -23,6 +22,7 @@ function Main(){
 
 	var actual = 0;
 
+	
 	//PRE
 	$(logo).transition({scale:0},0);
 	$(back_btn).transition({x:110, opacity:0},0);
@@ -33,7 +33,7 @@ function Main(){
 	arr_secciones[actual].animIn();
 
 
-	$(back_btn).bind(Main.touchstart, onClickBackBtn);
+	$(back_btn).bind('touchstart', onClickBackBtn);
 
 
 	Main.navegar = function(id){

@@ -1,54 +1,29 @@
-
 THE SECRET:
+Just by one touch on the screen you'll be able to tell your smartphone which of the 52 cards in the deck is the one you want to make appear.
 
-By only one touch on the screen you'll be able to tell your smartphone which one of the 52 cards on the deck is the one you want to make appear.
-
-
-HOW IT WORKS:   
-
-As you can see in the picture above, the screen will be divided in 3 columns and 5 rows. The first 13 rectangles are invisible buttons that will set the value of the card as soon as they are touched. Without realising your finger, swipe in one of the 4 directions (Left = Clubs, Top = Hearts, Right = Spades, Bottom = Diamonds) to indicate the card's suit. That's it! Your card will appear after the pre-setted time pases. So, for example, if you touch the 8th button and swipe to de left, the 8 of clubs will appear. 
+HOW IT WORKS:
+As you can see in the picture above, the screen will be divided in 3 columns and 5 rows. The first 13 rectangles are invisible buttons that will set the value of the card as soon as they are touched. Right after touching one of the invisible buttons, without releasing your finger, swipe in one of the 4 directions (Left = Clubs, Top = Hearts, Right = Spades, Bottom = Diamonds) and then release to indicate the suit of the card. That's it! Your card will appear after preset time passes. So, for example, if you swipe to the left starting at the 8th button, the 8 of clubs will appear.
 
 THINGS TO KNOW
-
-- After your selected card is revealed, if someone touches it, the app will shut down leaving your performance clean (this works only in Performance Mode).
-
-- At the right bottom corner, you'll find another invisible button: the RESET button. This will be helpful in case you doubt you selected the right card. Just by touching the RESET button it will cancel the selected card to appear and will make all buttons enabled again. 
-
-- As soon as you touch/tell your device wich card you want to make appear, all buttons will be disabled (except the RESET button), so you or the spectator can touch the screen to verify your smartphone is off (while time laps is runing).
-
+* After your selected card is revealed, if someone touches it, app will close leaving your performance clean (only in Perform Mode).
+* At the right bottom corner, you'll find another invisible button: the RESET button. This button will be helpful in case you doubt you selected the right card. Just by touching the RESET button it will cancel the selected card to appear and will make all buttons enabled again.
+* As soon as you touch/tell your device which card you want to make appear, all buttons will be disabled (except the RESET button), so you or the spectator can touch the screen to verify your smartphone is off (while time lapse is running).
 
 SETTINGS
+In the settings panel you can select the following options:
 
-At the settings panel you can select the following options:
+MODE:
+* Learning: in this mode you'll be able to see where buttons are placed on the screen. This mode is the best choice for you to start practicing. Touching the revealed card will bring you back to home menu.
+* Perform: this is the mode you use to perfom the trick to an audience. Buttons are invisible, making your smartphone look like it's off. Touching the revealed card will close the app leaving your performance clean.
 
-MODE: 
+TIME: specifies the time lapse between setting the card and the revealing action.
 
-- Learning: in this mode you'll be able to see where buttons are placed in the screen. This mode is the best choice for you to start practicing. If you touch the revealed card, instead of shutting down the app it will bring you back to home menu.
-
-- Perform: this mode is the one you use to perfom the trick to an audience. Buttons are invisible making your smartphone look like it's off. Touching the revealed card will shut down the app leaving your performance clean.
-
-TIME: specifies the time laps between your card selection and the revealing action.
-
-REVEAL: specifies the way you want the card to appear (Instantly, Slowly, Growing).
-
+REVEAL: specifies the way you want the card to be revealed (Instantly, Slowly, Growing).
 
 ROUTINE
-
-After you know what card you have to make appear (could be a forced card or a truly spectator's selection) grab your phone and show the audience it's turned off by touching many times in many places on the screen. But make shure the first touch sets the selected card. 
-Also, after you made the selection you could let the spectators touch the screen to verify nothing strange is going on, your phone is just turned off.
-Remember that after you select a card, time laps will start running. So set the right amount of time in order to let you perform the turned off verification before your selected card appears.
-
-Have fun ;)
-
-
-
-
-
-
-
-
-
-
+After you know what card you have to make appear (could be a forced card or a truly free selection), grab your phone and show the audience is turned off by touching/swiping many times in many places on the screen. But make sure the first touch/swipe sets the selected card.
+Also, after you set a card, you could let spectators touch the screen to verify that nothing strange is going on, your phone is just off.
+Remember time lapse will start running immediately after you set a card. So, set the right amount of time you need in order to show the audience that your smartphone is off, before your selected card appears.
 
 
 

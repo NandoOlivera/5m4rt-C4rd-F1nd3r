@@ -7,9 +7,9 @@ function Home(){
 	var settings_btn = document.getElementById('home_settings_btn');
 	var tutorial_btn = document.getElementById('home_tutorial_btn');
 
-	$(perform_btn).bind(Main.touchstart, onClickPerformBtn);
-	$(settings_btn).bind(Main.touchstart, onClickSettingsBtn);
-	$(tutorial_btn).bind(Main.touchstart, onClickTutorialBtn);
+	$(perform_btn).bind('touchstart', onClickPerformBtn);
+	$(settings_btn).bind('touchstart', onClickSettingsBtn);
+	$(tutorial_btn).bind('touchstart', onClickTutorialBtn);
 
 	this.animIn = function(){
 		//PRE

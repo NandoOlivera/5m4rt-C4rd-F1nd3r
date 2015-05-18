@@ -14,6 +14,7 @@ function DataBase(){
 			localStorage.setItem('mode',0);
 			localStorage.setItem('time',5);
 			localStorage.setItem('reveal',0);
+			Main.alerta.mostrar();
 		}
 
 		mode = localStorage.getItem('mode');
