@@ -41,7 +41,7 @@ body {
 	left:0px;
 	top:0px;
 	background:url(../img/fondo.jpg) no-repeat #000;
-	background-size:319px auto;
+	background-size:320px auto;
 	overflow:hidden;
 	transform-origin:left top;
 	-webkit-transform-origin:left top;
@@ -247,6 +247,8 @@ body {
 	background:#000;
 	display:none;
 	z-index:4;
+	padding-right:1px;
+	padding-bottom:1px;
 }
 
 .truco_btn{
