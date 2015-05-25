@@ -37,6 +37,7 @@ function Truco(){
 			case 0:$('.truco_btn_learning').css('display','block');
 				   break;
 			case 1:$('.truco_btn_learning').css('display','none');
+				   brightness.setBrightness(0.0, function(){}, function(){});	
 				   break;
 		}
 
@@ -86,6 +87,7 @@ function Truco(){
 	function onIntervalo(){
 		estado = 3;
 		clearInterval(intervalo);
+		brightness.setBrightness(0.5, function(){}, function(){});
 		carta.mostrar(numero, palo);
 	}
 

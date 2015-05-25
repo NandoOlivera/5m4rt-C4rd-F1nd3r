@@ -2,10 +2,23 @@
 function Main(){
 	this.main = document.getElementById('main');
 
+	
 	$(this.main).transition({scale:$(window).width()/320},0);
-	$(this.main).css('display','block');
+	$(this.main).css({'display':'block','height':parseInt(($(window).height()*320)/$(window).width(),10)});
 
-	window.plugins.insomnia.keepAwake();
+	window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+	window.brightness.setKeepScreenOn(true);
+
+
+	try{
+		StatusBar.hide();	
+	}catch(e){
+
+	}
+
+
+	brightness.setBrightness(0.5, function(){}, function(){});
+	
 
 	Main.alerta = new Alerta();
 	
@@ -42,7 +55,6 @@ function Main(){
 		arr_secciones[actual].animIn();
 		
 		
-
 		if(id == 0){
 			$(logo).transition({scale:1, x:0, y:0},300);
 			$(back_btn).transition({x:110, opacity:0},300);

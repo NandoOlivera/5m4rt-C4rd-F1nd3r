@@ -13,7 +13,21 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Insomnia\"><param name=\"android-package\" value=\"nl.xservices.plugins.Insomnia\" /></feature>",
+                            "xml": "<feature name=\"Brightness\"><param name=\"android-package\" value=\"org.apache.cordova.plugin.Brightness.BrightnessPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\" />",
                             "count": 1
                         }
                     ]
@@ -25,7 +39,10 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.nando.truco"
         },
-        "nl.x-services.plugins.insomnia": {
+        "cordova.plugin.Brightness": {
+            "PACKAGE_NAME": "com.nando.truco"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.nando.truco"
         }
     },

@@ -6,10 +6,17 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/nl.x-services.plugins.insomnia/www/Insomnia.js",
-        "id": "nl.x-services.plugins.insomnia.Insomnia",
+        "file": "plugins/cordova.plugin.Brightness/www/brightness.js",
+        "id": "cordova.plugin.Brightness.Brightness",
         "clobbers": [
-            "window.plugins.insomnia"
+            "cordova.plugins.brightness"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "clobbers": [
+            "window.StatusBar"
         ]
     }
 ];
@@ -17,7 +24,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.0.1-dev",
-    "nl.x-services.plugins.insomnia": "4.0.1"
+    "cordova.plugin.Brightness": "0.1.0",
+    "cordova-plugin-statusbar": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

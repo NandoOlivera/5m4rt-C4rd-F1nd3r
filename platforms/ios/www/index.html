@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Smart Card Finder</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+
+        <script src="js/libs/jquery-1.8.3.min.js"></script>
+        <script src="js/libs/jquery.transit.min.js"></script>
+                
+        <script src="js/com/Main.js"></script>
+        <script src="js/com/DataBase.js"></script>
+        <script src="js/com/home/Home.js"></script>
+        <script src="js/com/settings/Settings.js"></script>
+        <script src="js/com/tutorial/Tutorial.js"></script>
+        <script src="js/com/truco/Truco.js"></script>
+        <script src="js/com/truco/TrucoBtn.js"></script>
+        <script src="js/com/truco/TrucoCarta.js"></script>
+        <script src="js/com/alerta/Alerta.js"></script>
+    </head>
+    <body>
+        
+        <div id="main">
+            <img id="main_logo" src="img/logo.png"/>
+            <div id="main_back_btn">BACK</div>
+            
+            <!-- HOME -->
+            <div id="home">
+              <div id="home_perform_btn" class="home_boton">PERFORM</div>  
+              <div id="home_settings_btn" class="home_boton">SETTINGS</div>  
+              <div id="home_tutorial_btn" class="home_boton">TUTORIAL</div>  
+            </div>
+
+            <!-- SETTINGS --> 
+            <div id="settings">
+              <div id="settings_placa">
+                <div id="settings_titulo">SETTINGS</div>
+                Mode: 
+                <select class="settings_select">
+                  <option value="0">Learning</option>
+                  <option value="1">Perform</option>
+                </select>        
+
+                Time: 
+                <select class="settings_select">
+                  <option value="5">5 sec</option>
+                  <option value="10">10 sec</option>
+                  <option value="20">20 sec</option>
+                  <option value="30">30 sec</option>
+                </select>
+
+                Reveal: 
+                <select class="settings_select">
+                  <option value="0">Instantly</option>
+                  <option value="1">Slowly</option>
+                  <option value="2">Growing</option>
+                </select>
+
+              </div>
+            </div>
+
+            <!-- TUTORIAL -->
+            <div id="tutorial">
+              <div id="tutorial_placa">
+                <div id="tutorial_titulo">TUTORIAL</div>
+                <div id="tutorial_texto">
+                  <span class="tutorial_texto_titulo">THE SECRET:</span><br/>
+                  Just by one touch on the screen you'll be able to tell your smartphone which of the 52 cards in the deck is the one you want to make appear.<br/><br/>
+                  <span class="tutorial_texto_titulo">HOW IT WORKS:</span><br/>
+                  <img id="tutorial_grilla" src="img/tutorial/grilla.png"/><br/>
+                  As you can see in the picture above, the screen will be divided in 3 columns and 5 rows. The first 13 rectangles are invisible buttons that will set the value of the card as soon as they are touched.<br/> 
+                  Right after touching one of the invisible buttons, without releasing your finger, swipe in one of the 4 directions:<br/>
+                  <img id="tutorial_swipes" src="img/tutorial/swipes.png"/><br/>
+                  And then release to indicate the suit of the card. That's it! Your card will appear after preset time passes. So, for example, if you swipe to the left starting at the 8th button, the 8 of clubs will appear.<br/><br/>
+                  <span class="tutorial_texto_titulo">THINGS TO KNOW</span><br/>
+                  &#8226 After your selected card is revealed, if someone touches it, app will close leaving your performance clean (only in Perform Mode).<br/><br/>
+                  &#8226 At the right bottom corner, you'll find another invisible button: the RESET button. This button will be helpful in case you doubt you selected the right card. Just by touching the RESET button it will cancel the selected card to appear and will make all buttons enabled again.<br/><br/>
+                  &#8226 As soon as you touch/tell your device which card you want to make appear, all buttons will be disabled (except the RESET button), so you or the spectator can touch the screen to verify your smartphone is off (while time lapse is running).<br/><br/>
+                  <span class="tutorial_texto_titulo">SETTINGS</span><br/>
+                  In the settings panel you can select the following options:<br/><br/>
+                  MODE:<br/>
+                  &#8226 Learning: in this mode you'll be able to see where buttons are placed on the screen. This mode is the best choice for you to start practicing. Touching the revealed card will bring you back to home menu.<br/><br/>
+                  &#8226 Perform: this is the mode you use to perfom the trick to an audience. Buttons are invisible, making your smartphone look like it's off. Touching the revealed card will close the app leaving your performance clean.<br/><br/>
+                  TIME: specifies the time lapse between setting the card and the revealing action.<br/><br/>
+                  REVEAL: specifies the way you want the card to be revealed (Instantly, Slowly, Growing).<br/><br/>
+                  <span class="tutorial_texto_titulo">ROUTINE</span><br/>
+                  After you know what card you have to make appear (could be a forced card or a truly free selection), grab your phone and show the audience is turned off by touching/swiping many times in many places on the screen. But make sure the first touch/swipe sets the selected card.<br/>
+                  Also, after you set a card, you could let spectators touch the screen to verify that nothing strange is going on, your phone is just off.<br/>
+                  Remember time lapse will start running immediately after you set a card. So, set the right amount of time you need in order to show the audience that your smartphone is off, before your selected card appears.<br/><br/>
+                </div>
+              </div>
+            </div>
+
+            <!-- TRUCO-->
+            <div id="truco">
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_left truco_btn_learning_top">
+                  <div class="truco_btn_learning_num">A</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_top">
+                  <div class="truco_btn_learning_num">2</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_top">
+                  <div class="truco_btn_learning_num">3</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_left">
+                  <div class="truco_btn_learning_num">4</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning">
+                  <div class="truco_btn_learning_num">5</div>
+                </div>
+               </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning">
+                  <div class="truco_btn_learning_num">6</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_left">
+                  <div class="truco_btn_learning_num">7</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning">
+                  <div class="truco_btn_learning_num">8</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning">
+                  <div class="truco_btn_learning_num">9</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_left">
+                  <div class="truco_btn_learning_num">10</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning">
+                  <div class="truco_btn_learning_num">J</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning">
+                  <div class="truco_btn_learning_num">Q</div>
+                </div>
+              </div>
+
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_left">
+                  <div class="truco_btn_learning_num">K</div>
+                </div>
+              </div>
+
+              <!-- VACIO -->
+              <div class="truco_btn">
+                <div class="truco_btn_learning truco_btn_learning_right"></div>
+              </div>
+
+              <!-- RESET BTN -->
+              <div class="truco_btn">
+                <div class="truco_btn_learning">
+                  <div class="truco_btn_learning_num">RESET</div>
+                </div>
+              </div>
+            </div>
+
+            <div id="truco_carta">
+                <img id="truco_carta_svg" />
+            </div>
+
+            <div id="alerta">
+              <div id="alerta_placa">
+                <div id="alerta_placa_titulo">Thank you for purchasing Magic Card Reveal!</div>
+                I hope you enjoy performing with it. Check out the tutorial before you start using it.<br/>
+                <div id="alerta_boton">OK</div>
+              </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+            
+    </body>
+</html>
