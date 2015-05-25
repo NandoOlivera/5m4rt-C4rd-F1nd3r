@@ -247,8 +247,8 @@ body {
 	background:#000;
 	display:none;
 	z-index:4;
-	padding-right:1px;
-	padding-bottom:1px;
+	padding-right:5px;
+	padding-bottom:5px;
 }
 
 .truco_btn{

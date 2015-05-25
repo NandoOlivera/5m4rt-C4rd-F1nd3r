@@ -17,7 +17,9 @@ function Main(){
 	}
 
 
-	brightness.setBrightness(0.5, function(){}, function(){});
+	brightness.getBrightness(function(status){
+		Main.brightness_default = status;
+	}, function(){});
 	
 
 	Main.alerta = new Alerta();

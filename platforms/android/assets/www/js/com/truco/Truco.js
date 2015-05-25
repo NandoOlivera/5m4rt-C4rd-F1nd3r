@@ -87,7 +87,7 @@ function Truco(){
 	function onIntervalo(){
 		estado = 3;
 		clearInterval(intervalo);
-		brightness.setBrightness(0.5, function(){}, function(){});
+		brightness.setBrightness(Main.brightness_default, function(){}, function(){});
 		carta.mostrar(numero, palo);
 	}
 
