@@ -33,10 +33,9 @@ function TrucoCarta(){
 	function onTouchStartThis(e){
 		e.preventDefault();
 		
-		$(self.main).css({'display':'none','opacity':0});	
-		
 		switch(Main.db.getMode()){
-			case 0:Main.navegar(0);
+			case 0:$(self.main).css({'display':'none','opacity':0});
+				   Main.navegar(0);
 				   break;
 			case 1://navigator.app.exitApp();
 				   break;	   
