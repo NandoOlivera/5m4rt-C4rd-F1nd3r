@@ -38,7 +38,7 @@ function TrucoCarta(){
 		switch(Main.db.getMode()){
 			case 0:Main.navegar(0);
 				   break;
-			case 1:navigator.app.exitApp();
+			case 1:brightness.setBrightness(0.0, function(){}, function(){});
 				   break;	   
 		}
 	}
