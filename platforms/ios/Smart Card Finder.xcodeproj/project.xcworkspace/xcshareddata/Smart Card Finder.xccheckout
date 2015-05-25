@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B699CECC-D8BD-4855-952B-44FD8CB9FADD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Smart Card Finder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>31C0AFEAEF1379E77E56BE1FEAB33B26D5642721</key>
+		<string>https://github.com/NandoOlivera/5m4rt-C4rd-F1nd3r.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Smart Card Finder.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>31C0AFEAEF1379E77E56BE1FEAB33B26D5642721</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/NandoOlivera/5m4rt-C4rd-F1nd3r.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>31C0AFEAEF1379E77E56BE1FEAB33B26D5642721</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>31C0AFEAEF1379E77E56BE1FEAB33B26D5642721</string>
+			<key>IDESourceControlWCCName</key>
+			<string>5m4rt-C4rd-F1nd3r</string>
+		</dict>
+	</array>
+</dict>
+</plist>
