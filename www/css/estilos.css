@@ -217,6 +217,7 @@ body {
 	font-size:18px;
 	line-height:22px;
 	overflow-y:scroll;
+	-webkit-overflow-scrolling: touch;
 	text-align:justify;  
 }
 
