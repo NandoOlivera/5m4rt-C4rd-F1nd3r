@@ -19,6 +19,7 @@ function Main(){
 
 	brightness.getBrightness(function(status){
 		Main.brightness_default = status;
+		Main.brightness_actual = Main.brightness_default;
 	}, function(){});
 	
 
@@ -49,7 +50,8 @@ function Main(){
 
 
 	$(back_btn).bind('touchstart', onClickBackBtn);
-
+	document.addEventListener("pause", onPauseApp, false);
+	document.addEventListener("resume", onResumeApp, false);
 
 	Main.navegar = function(id){
 		arr_secciones[actual].animOut();
@@ -64,6 +66,14 @@ function Main(){
 			$(logo).transition({scale:0.56, x:-64, y:-16},300);
 			$(back_btn).delay(200).transition({x:0, opacity:1},300);
 		}
+	}
+
+	function onPauseApp(e){
+		brightness.setBrightness(Main.brightness_default, function(){}, function(){});
+	}
+
+	function onResumeApp(e){
+		brightness.setBrightness(Main.brightness_actual, function(){}, function(){});
 	}
 
 	function onClickBackBtn(e){
