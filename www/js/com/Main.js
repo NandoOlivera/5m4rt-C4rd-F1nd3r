@@ -50,8 +50,8 @@ function Main(){
 
 
 	$(back_btn).bind('touchstart', onClickBackBtn);
-	document.addEventListener("pause", onPauseApp, false);
-	document.addEventListener("resume", onResumeApp, false);
+	document.addEventListener("resign", onPauseApp, false);
+	document.addEventListener("active", onResumeApp, false);
 
 	Main.navegar = function(id){
 		arr_secciones[actual].animOut();
