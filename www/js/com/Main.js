@@ -20,6 +20,10 @@ function Main(){
 	brightness.getBrightness(function(status){
 		Main.brightness_default = status;
 		Main.brightness_actual = Main.brightness_default;
+
+		document.addEventListener("resign", onPauseApp, false);
+		document.addEventListener("active", onResumeApp, false);
+
 	}, function(){});
 	
 
@@ -50,8 +54,7 @@ function Main(){
 
 
 	$(back_btn).bind('touchstart', onClickBackBtn);
-	document.addEventListener("resign", onPauseApp, false);
-	document.addEventListener("active", onResumeApp, false);
+	
 
 	Main.navegar = function(id){
 		arr_secciones[actual].animOut();
