@@ -4,6 +4,7 @@ function Tutorial(){
 	this.main = document.getElementById('tutorial');
 
 	var placa = document.getElementById('tutorial_placa');
+	
 
 	this.animIn = function(){
 		//PRE
