@@ -7,7 +7,7 @@ function Main(){
 	$(this.main).css({'display':'block','height':Math.floor(($(window).height()*320)/$(window).width(),10)});
 
 	window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
-	window.brightness.setKeepScreenOn(true);
+	
 
 
 	try{

@@ -38,6 +38,7 @@ function Truco(){
 				   break;
 			case 1:$('.truco_btn_learning').css('display','none');
 				   Main.brightness_actual = 0.0;
+				   window.brightness.setKeepScreenOn(true);
 				   brightness.setBrightness(Main.brightness_actual, function(){}, function(){});	
 				   break;
 		}
