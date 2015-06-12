@@ -92,6 +92,10 @@ function Truco(){
 		Main.brightness_actual = Main.brightness_default;
 		brightness.setBrightness(Main.brightness_actual, function(){}, function(){});
 		carta.mostrar(numero, palo);
+		
+		if(Main.db.getMode() == 0){
+			$('.truco_btn_learning').css('display','none');
+		}
 	}
 
 
