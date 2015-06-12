@@ -270,16 +270,16 @@ body {
 	position:absolute;
 	left:0px;
 	top:0px;
-	border-right:2px solid #666;
-	border-bottom:2px solid #666;
+	border-right:2px solid #999;
+	border-bottom:2px solid #999;
 }
 
 .truco_btn_learning_left{
-	border-left:2px solid #666;
+	border-left:2px solid #999;
 }
 
 .truco_btn_learning_top{
-	border-top:2px solid #666;
+	border-top:2px solid #999;
 }
 
 .truco_btn_learning_right{
@@ -293,7 +293,7 @@ body {
 	margin-top:-10px;
 	font-family:'FuturaStdHeavy';
 	font-size:22px;
-	color:#666;
+	color:#999;
 	text-align:center;
 }
 
