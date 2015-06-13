@@ -8,6 +8,7 @@ function Truco(){
 		arr_btns.push(new TrucoBtn(i,$(this.main).find('.truco_btn')[i]));
 	}
 
+	var timer = new TrucoTimer();
 	var carta = new TrucoCarta();
 
 	var reset_btn = $(this.main).find('.truco_btn')[14];
@@ -82,6 +83,10 @@ function Truco(){
 			}
 
 			intervalo = setInterval(onIntervalo,Main.db.getTime()*1000);
+
+			if(Main.db.getMode() == 0){
+				timer.start();
+			}
 			
 		}
 	}
@@ -108,6 +113,11 @@ function Truco(){
 			}catch(e){
 
 			}
+
+			if(Main.db.getMode() == 0){
+				timer.stop();
+			}
+
 		}
 	}
 

@@ -8,8 +8,6 @@ function Main(){
 
 	window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
 	
-
-
 	try{
 		StatusBar.hide();	
 	}catch(e){
