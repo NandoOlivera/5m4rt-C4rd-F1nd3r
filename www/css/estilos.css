@@ -333,6 +333,8 @@ body {
 }
 
 #truco_timer{
+	font-size:24px;
+	margin-top:-11px;
 	color:#FFF;
 }
 
