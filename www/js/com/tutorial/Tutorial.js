@@ -5,6 +5,9 @@ function Tutorial(){
 
 	var placa = document.getElementById('tutorial_placa');
 	
+	var video = document.getElementById('tutorial_video');	
+
+	$(video).bind('ended', onEndVideo);
 
 	this.animIn = function(){
 		//PRE
@@ -18,6 +21,13 @@ function Tutorial(){
 	this.animOut = function(){
 		$(placa).transition({opacity:0},300,function(){
 			$(self.main).css('display','none');
+			video.pause();
+        	video.currentTime = 0
 		});
 	}
+
+	function onEndVideo(e){
+		video.load();
+	}
+
 }
