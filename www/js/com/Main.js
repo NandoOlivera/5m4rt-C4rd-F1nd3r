@@ -2,7 +2,6 @@
 function Main(){
 	this.main = document.getElementById('main');
 
-	
 	$(this.main).transition({scale:$(window).width()/320},0);
 	$(this.main).css({'display':'block','height':Math.floor(($(window).height()*320)/$(window).width(),10)});
 

@@ -16,6 +16,9 @@ function Tutorial(){
 		$(self.main).css('display','block');
 
 		$(placa).transition({x:0},300);
+		video.poster = 'video/poster.jpg';
+		video.load();
+		
 	}
 
 	this.animOut = function(){
@@ -27,7 +30,8 @@ function Tutorial(){
 	}
 
 	function onEndVideo(e){
-		video.load();
+		video.poster = 'video/poster.jpg';
+        video.load();
 	}
 
 }
