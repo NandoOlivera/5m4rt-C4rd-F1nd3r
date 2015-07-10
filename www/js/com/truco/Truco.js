@@ -39,8 +39,8 @@ function Truco(){
 				   break;
 			case 1:$('.truco_btn_learning').css('display','none');
 				   Main.brightness_actual = 0.0;
-				   window.brightness.setKeepScreenOn(true);
-				   brightness.setBrightness(Main.brightness_actual, function(){}, function(){});	
+				   /*window.brightness.setKeepScreenOn(true);
+				   brightness.setBrightness(Main.brightness_actual, function(){}, function(){});*/	
 				   break;
 		}
 
@@ -95,7 +95,7 @@ function Truco(){
 		estado = 3;
 		clearInterval(intervalo);
 		Main.brightness_actual = Main.brightness_default;
-		brightness.setBrightness(Main.brightness_actual, function(){}, function(){});
+		//brightness.setBrightness(Main.brightness_actual, function(){}, function(){});
 		carta.mostrar(numero, palo);
 		
 		if(Main.db.getMode() == 0){

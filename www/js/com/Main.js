@@ -5,7 +5,7 @@ function Main(){
 	$(this.main).transition({scale:$(window).width()/320},0);
 	$(this.main).css({'display':'block','height':Math.floor(($(window).height()*320)/$(window).width(),10)});
 
-	window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+	/*window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
 	
 	try{
 		StatusBar.hide();	
@@ -22,7 +22,7 @@ function Main(){
 		document.addEventListener("active", onResumeApp, false);
 
 	}, function(){});
-	
+	*/
 
 	Main.alerta = new Alerta();
 	
@@ -69,11 +69,11 @@ function Main(){
 	}
 
 	function onPauseApp(e){
-		brightness.setBrightness(Main.brightness_default, function(){}, function(){});
+		//brightness.setBrightness(Main.brightness_default, function(){}, function(){});
 	}
 
 	function onResumeApp(e){
-		brightness.setBrightness(Main.brightness_actual, function(){}, function(){});
+		//brightness.setBrightness(Main.brightness_actual, function(){}, function(){});
 	}
 
 	function onClickBackBtn(e){

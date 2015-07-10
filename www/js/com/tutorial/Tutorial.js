@@ -18,8 +18,11 @@ function Tutorial(){
 		$(self.main).css('display','block');
 
 		$(placa).transition({x:0},300);
-		video.poster = 'video/poster.jpg';
+		video.src = 'video/null.mp4';
 		video.load();
+		video.poster = 'video/poster.jpg';
+		video.src = 'video/video.mp4';
+		
 	}
 
 	this.animOut = function(){
@@ -31,8 +34,10 @@ function Tutorial(){
 	}
 
 	function onEndVideo(e){
+		video.src = 'video/null.mp4';
+		video.load();
 		video.poster = 'video/poster.jpg';
-        video.load();
+		video.src = 'video/video.mp4';
 	}
 
 }
