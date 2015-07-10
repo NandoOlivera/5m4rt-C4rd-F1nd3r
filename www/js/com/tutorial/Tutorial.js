@@ -7,6 +7,8 @@ function Tutorial(){
 	
 	var video = document.getElementById('tutorial_video');	
 
+	video.src = 'video/video.mp4';
+
 	$(video).bind('ended', onEndVideo);
 
 	this.animIn = function(){
@@ -18,7 +20,6 @@ function Tutorial(){
 		$(placa).transition({x:0},300);
 		video.poster = 'video/poster.jpg';
 		video.load();
-		
 	}
 
 	this.animOut = function(){

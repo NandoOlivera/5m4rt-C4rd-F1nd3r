@@ -1,0 +1,7 @@
+iPhone 3 (3.5 Inch): 640 x 920
+
+iPhone 4+5 (4 Inch): 640 x 1136
+
+iPhone 6 (4.7 Inch): 750 x 1334
+
+iPhone 6 Plus (5.5 Inch): 1242 x 2208 (you need the screenshot in this resolution, the phone scales them down to 1080 x 1920)
