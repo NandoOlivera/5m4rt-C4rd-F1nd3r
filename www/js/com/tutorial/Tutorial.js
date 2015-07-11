@@ -5,11 +5,11 @@ function Tutorial(){
 
 	var placa = document.getElementById('tutorial_placa');
 	
-	var video = document.getElementById('tutorial_video');	
+	var video_holder = document.getElementById('tutorial_video_holder');
+	var video;
 
-	video.src = 'video/video.mp4';
 
-	$(video).bind('ended', onEndVideo);
+	//$(video).bind('ended', onEndVideo);
 
 	this.animIn = function(){
 		//PRE
@@ -18,10 +18,8 @@ function Tutorial(){
 		$(self.main).css('display','block');
 
 		$(placa).transition({x:0},300);
-		video.src = 'video/null.mp4';
-		video.load();
-		video.poster = 'video/poster.jpg';
-		video.src = 'video/video.mp4';
+		
+		resetVideo();
 		
 	}
 
@@ -33,11 +31,15 @@ function Tutorial(){
 		});
 	}
 
-	function onEndVideo(e){
-		video.src = 'video/null.mp4';
-		video.load();
+	function resetVideo(){
+		$(video_holder).empty();
+		video = document.createElement('video');
+		video.width = 230;
+		video.height = 129;
 		video.poster = 'video/poster.jpg';
 		video.src = 'video/video.mp4';
+		video.controls = true;
+		$(video_holder).append(video);
 	}
 
 }
