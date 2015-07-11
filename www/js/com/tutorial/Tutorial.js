@@ -16,10 +16,8 @@ function Tutorial(){
 		$(placa).transition({opacity:1,x:322},0);
 
 		$(self.main).css('display','block');
-
-		$(placa).transition({x:0},300);
-		
 		resetVideo();
+		$(placa).delay(50).transition({x:0},300);
 		
 	}
 
