@@ -7,15 +7,27 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-<meta property="og:title" content="Titulo" />
-<meta property="og:description" content="Descripción" />
-<meta property="og:image" content="img/share.png?a=1" />
+<meta property="og:title" content="App: Magic Card Reveal" />
+<meta property="og:description" content="Blow people's minds with this great reveal effect! Make a spectator's freely selected card magically appear on your phone screen. You can use Magic Card Reveal to finish any trick that you want, as it works with forced cards as well as freely selected cards that you manage to control. This app has been tested by professional magicians in order to get the best usability and performance." />
+<meta property="og:image" content="http://magiccardreveal.com/img/share.jpg" />
+<meta property="og:url" content="http://magiccardreveal.com" />
 
 <title>Magic Card Reveal</title>
 <link rel="shortcut icon" href="img/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
 <script src="js/libs/jquery-1.8.3.min.js"></script>
 <script src="js/com/Main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66406793-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
