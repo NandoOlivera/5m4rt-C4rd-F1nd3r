@@ -8,9 +8,9 @@ function Tutorial(){
 	var video_holder = document.getElementById('tutorial_video_holder');
 	var video;
 
-
-	//$(video).bind('ended', onEndVideo);
-
+	var myScroll = new IScroll('#tutorial_texto', {  mouseWheel: true, scrollY: true, interactiveScrollbars: true, scrollbars: "custom", bounce:false });					
+	$(this.main).css('display','none');
+		
 	this.animIn = function(){
 		//PRE
 		$(placa).transition({opacity:1,x:322},0);
@@ -19,6 +19,7 @@ function Tutorial(){
 		resetVideo();
 		$(placa).delay(50).transition({x:0},300);
 		
+
 	}
 
 	this.animOut = function(){

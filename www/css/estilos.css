@@ -186,7 +186,7 @@ body {
 	position:absolute;
 	left:0px;
 	top:0px;
-	display:none;
+	/*display:none;*/
 	z-index:3;
 }
 
@@ -212,7 +212,7 @@ body {
 }
 
 #tutorial_texto{
-	width:230px;
+	width:258px;
 	height:calc(100% - 80px);
 	position:relative;
 	margin-left:30px;
@@ -220,9 +220,13 @@ body {
 	font-family:'FuturaStdLight';
 	font-size:18px;
 	line-height:22px;
-	overflow-y:scroll;
-	-webkit-overflow-scrolling: touch;
+	overflow:hidden;
+	/*-webkit-overflow-scrolling: touch;*/
 	text-align:justify;  
+}
+
+#tutorial_holder_texto{
+	width:230px;
 }
 
 .tutorial_texto_titulo{
@@ -397,4 +401,75 @@ body {
 	border-radius: 8px;
 	margin-left: 54px;
 	margin-top: 20px;
+}
+
+
+
+/****** ISCROLL ******/
+
+.iScrollVerticalScrollbar {
+	position: absolute;
+	z-index: 9999;
+	width:5px;
+	right: 10px;
+	overflow: visible !important; 
+	top: 0px;
+	bottom: 0px;
+	background-color:#333;
+}
+
+.iScrollVerticalScrollbar.iScrollBothScrollbars {
+	bottom: 18px;
+}
+
+.iScrollIndicator {
+	position: absolute;
+	background: #FFE4B8;
+ 
+}
+
+.iScrollVerticalScrollbar .iScrollIndicator {
+	width:5px;
+	background:#CCC;
+	border-radius:0px; 
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 2000px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+}
+
+#scroller li {
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	background-color: #fafafa;
+	font-size: 14px;
 }

@@ -37,6 +37,7 @@
 
         <script src="js/libs/jquery-1.8.3.min.js"></script>
         <script src="js/libs/jquery.transit.min.js"></script>
+        <script src="js/libs/iscroll.js"></script>
                 
         <script src="js/com/Main.js"></script>
         <script src="js/com/DataBase.js"></script>
@@ -95,30 +96,32 @@
               <div id="tutorial_placa">
                 <div id="tutorial_titulo">TUTORIAL</div>
                 <div id="tutorial_texto">
-                  <div id="tutorial_video_holder"></div>  
-                  <span class="tutorial_texto_titulo">THE SECRET:</span><br/>
-                  Just by one unnoticeable touch on the screen you'll be able to tell your smartphone which of the 52 cards in the deck is the one you want to make appear.<br/><br/>
-                  <span class="tutorial_texto_titulo">HOW IT WORKS:</span><br/>
-                  <img id="tutorial_grilla" src="img/tutorial/grilla.png"/><br/>
-                  As you can see in the picture above, the screen will be divided in 3 columns and 5 rows. The first 13 rectangles are invisible buttons that will set the value of the card as soon as they are touched.<br/> 
-                  Right after touching one of the invisible buttons, without releasing your finger, swipe in one of the 4 directions:<br/>
-                  <img id="tutorial_swipes" src="img/tutorial/swipes.png"/><br/>
-                  And then release to indicate the suit of the card. That's it! Your card will appear after preset time passes. So, for example, if you swipe to the left starting at the 8th button, the 8 of clubs will appear.<br/><br/>
-                  <span class="tutorial_texto_titulo">THINGS TO KNOW</span><br/>
-                  &#8226 At the right bottom corner, you'll find another invisible button: the RESET button. This button will be helpful in case you doubt you selected the right card. Just by touching the RESET button it will cancel the selected card to appear and will make all buttons enabled again.<br/><br/>
-                  &#8226 As soon as you touch/tell your device which card you want to make appear, all buttons will be disabled (except the RESET button), so you or the spectator can touch the screen to verify your smartphone is off (while time lapse is running).<br/><br/>
-                  &#8226 Jokers are not available because its design varies from brand to brand. So remember to remove them from the deck before you start your performance.<br/><br/>
-                  <span class="tutorial_texto_titulo">SETTINGS</span><br/>
-                  In the settings panel you can select the following options:<br/><br/>
-                  <strong>MODE:</strong><br/>
-                  &#8226 <strong>Learning:</strong> in this mode you'll be able to see where buttons are placed on the screen. This mode is the best choice for you to start practicing. Touching the revealed card will bring you back to home menu.<br/><br/>
-                  &#8226 <strong>Perform:</strong> this is the mode you use to perfom the trick to an audience. Buttons are invisible, making your smartphone look like it's off.<br/><br/>
-                  <strong>TIME:</strong> specifies the time lapse between setting the card and the revealing action.<br/><br/>
-                  <strong>REVEAL:</strong> specifies the way you want the card to be revealed (Instantly, Slowly, Growing).<br/><br/>
-                  <span class="tutorial_texto_titulo">ROUTINE</span><br/>
-                  After you know what card you have to make appear (could be a forced card or a truly free selection that you manage to control), grab your phone and show the audience is turned off by touching/swiping many times in many places on the screen. But make sure the first touch/swipe sets the selected card.<br/>
-                  Also, after you set a card, you could let spectators touch the screen to verify that nothing strange is going on, your phone is just off.<br/>
-                  Remember time lapse will start running immediately after you set a card. So, set the right amount of time you need in order to show the audience that your smartphone is off, before your selected card appears.<br/><br/>
+                  <div id="tutorial_holder_texto">
+                    <div id="tutorial_video_holder"></div>  
+                    <span class="tutorial_texto_titulo">THE SECRET:</span><br/>
+                    Just by one unnoticeable touch on the screen you'll be able to tell your smartphone which of the 52 cards in the deck is the one you want to make appear.<br/><br/>
+                    <span class="tutorial_texto_titulo">HOW IT WORKS:</span><br/>
+                    <img id="tutorial_grilla" src="img/tutorial/grilla.png"/><br/>
+                    As you can see in the picture above, the screen will be divided in 3 columns and 5 rows. The first 13 rectangles are invisible buttons that will set the value of the card as soon as they are touched.<br/> 
+                    Right after touching one of the invisible buttons, without releasing your finger, swipe in one of the 4 directions:<br/>
+                    <img id="tutorial_swipes" src="img/tutorial/swipes.png"/><br/>
+                    And then release to indicate the suit of the card. That's it! Your card will appear after preset time passes. So, for example, if you swipe to the left starting at the 8th button, the 8 of clubs will appear.<br/><br/>
+                    <span class="tutorial_texto_titulo">THINGS TO KNOW</span><br/>
+                    &#8226 At the right bottom corner, you'll find another invisible button: the RESET button. This button will be helpful in case you doubt you selected the right card. Just by touching the RESET button it will cancel the selected card to appear and will make all buttons enabled again.<br/><br/>
+                    &#8226 As soon as you touch/tell your device which card you want to make appear, all buttons will be disabled (except the RESET button), so you or the spectator can touch the screen to verify your smartphone is off (while time lapse is running).<br/><br/>
+                    &#8226 Jokers are not available because its design varies from brand to brand. So remember to remove them from the deck before you start your performance.<br/><br/>
+                    <span class="tutorial_texto_titulo">SETTINGS</span><br/>
+                    In the settings panel you can select the following options:<br/><br/>
+                    <strong>MODE:</strong><br/>
+                    &#8226 <strong>Learning:</strong> in this mode you'll be able to see where buttons are placed on the screen. This mode is the best choice for you to start practicing. Touching the revealed card will bring you back to home menu.<br/><br/>
+                    &#8226 <strong>Perform:</strong> this is the mode you use to perfom the trick to an audience. Buttons are invisible, making your smartphone look like it's off.<br/><br/>
+                    <strong>TIME:</strong> specifies the time lapse between setting the card and the revealing action.<br/><br/>
+                    <strong>REVEAL:</strong> specifies the way you want the card to be revealed (Instantly, Slowly, Growing).<br/><br/>
+                    <span class="tutorial_texto_titulo">ROUTINE</span><br/>
+                    After you know what card you have to make appear (could be a forced card or a truly free selection that you manage to control), grab your phone and show the audience is turned off by touching/swiping many times in many places on the screen. But make sure the first touch/swipe sets the selected card.<br/>
+                    Also, after you set a card, you could let spectators touch the screen to verify that nothing strange is going on, your phone is just off.<br/>
+                    Remember time lapse will start running immediately after you set a card. So, set the right amount of time you need in order to show the audience that your smartphone is off, before your selected card appears.<br/><br/>
+                  </div>
                 </div>
               </div>
             </div>
