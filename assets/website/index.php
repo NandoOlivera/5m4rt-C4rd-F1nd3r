@@ -7,10 +7,16 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
+<!-- FACEBOOK -->
 <meta property="og:title" content="App: Magic Card Reveal" />
 <meta property="og:description" content="Blow people's minds with this great reveal effect! Make a spectator's freely selected card magically appear on your phone screen. You can use Magic Card Reveal to finish any trick that you want, as it works with forced cards as well as freely selected cards that you manage to control. This app has been tested by professional magicians in order to get the best usability and performance." />
 <meta property="og:image" content="http://magiccardreveal.com/img/share.jpg" />
 <meta property="og:url" content="http://magiccardreveal.com" />
+
+<!-- SEO -->
+<meta name="title" content="Magic Card Reveal"/>
+<meta name="description" content="Blow people's minds with this great reveal effect! Make a spectator's freely selected card magically appear on your phone screen. You can use Magic Card Reveal to finish any trick that you want, as it works with forced cards as well as freely selected cards that you manage to control. This app has been tested by professional magicians in order to get the best usability and performance."/>
+<meta name="keywords" content="Magic, Card, Trick, Reveal, Truco, Magia, Cartas, Magician, Mago, Illusion, Ilusion, Amaze, Deck, App, Aplicacion, App Store, Google, Play"/>
 
 <title>Magic Card Reveal</title>
 <link rel="shortcut icon" href="img/favicon.ico" />
@@ -39,8 +45,7 @@
 			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/JeKvv1szuh8?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<a href="mailto:support@magiccardreveal.com"><div id="support_btn">Support</div></a>
-		<img id="app_store_btn" src="img/app_store_btn.png"/>
-		
+		<a href="https://itunes.apple.com/app/magic-card-reveal/id1028850308" target="_blank"><img id="app_store_btn" src="img/app_store_btn.png"/></a>
 	</div>
 	<script>
 		$(document).ready(function(){
